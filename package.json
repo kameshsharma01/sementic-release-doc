@@ -4,7 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier \"{lib,test}/**/*.js\"",
+    "format:check": "npm run format -- --check",
+    "format:list": "npm run format -- --list-different",
+    "format:write": "npm run format -- --write",
+    "lint": "eslint \"{lib,test}/**/*.js\" index.js",
+    "lint:fix": "npm run lint -- --fix",
+    "start:dev": "nodemon -r make-promises-safe -r dotenv/config index.js",
+    "start": "node -r make-promises-safe -r dotenv/config index.js",
+    "test:dependencies": "./test/support/depcheck.js",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -19,6 +30,7 @@
   "dependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
+    "depcheck": "^1.4.3",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "nest": "^0.1.6",
