@@ -33,6 +33,7 @@
     "depcheck": "^1.4.3",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
     "nest": "^0.1.6",
     "pino-pretty": "^8.1.0",
     "prettier": "^2.7.1"
