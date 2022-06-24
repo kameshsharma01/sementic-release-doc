@@ -1,0 +1,9 @@
+@commitlint/cli
+@commitlint/config-conventional
+@semantic-release/changelog
+@semantic-release/git
+husky
+lint-staged
+make-promises-safe
+pino-pretty
+semantic-release

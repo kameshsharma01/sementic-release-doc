@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/kameshsharma01/sementic-release-doc#readme",
   "dependencies": {
-    "nest": "^0.1.6"
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "nest": "^0.1.6",
+    "pino-pretty": "^8.1.0",
+    "prettier": "^2.7.1"
   }
 }
