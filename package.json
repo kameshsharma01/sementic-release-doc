@@ -8,11 +8,11 @@
     "test": "test"
   },
   "scripts": {
-    "format": "prettier \"{lib}/**/*.js\"",
+    "format": "prettier \"{lib,test}/**/*.js\"",
     "format:check": "npm run format -- --check",
     "format:list": "npm run format -- --list-different",
     "format:write": "npm run format -- --write",
-    "lint": "eslint \"{lib}/**/*.js\" index.js",
+    "lint": "eslint \"{lib,test}/**/*.js\" index.js",
     "lint:fix": "npm run lint -- --fix",
     "start:dev": "nodemon -r make-promises-safe -r dotenv/config index.js",
     "start": "node -r make-promises-safe -r dotenv/config index.js",
