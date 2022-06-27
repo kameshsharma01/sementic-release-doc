@@ -32,6 +32,7 @@
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "7",
+    "mrm": "2",
     "nest": "^0.1.6",
     "pino-pretty": "^8.1.0",
     "prettier": "^2.7.1"
@@ -45,7 +46,7 @@
     "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^4.3.8",
-    "lint-staged": "^11.0.0",
+    "lint-staged": "^13.0.3",
     "nock": "^13.0.11",
     "pino-pretty": "^4.8.0",
     "prettier": "^2.3.0",
