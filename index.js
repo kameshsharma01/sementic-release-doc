@@ -1,3 +1,3 @@
 //comment
 let hello;
-console.log(aa);
+console.log(hello);
