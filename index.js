@@ -1,4 +1,4 @@
 //comment
-let hello='1';
+let hello = '1';
 
-console.log(h42);
+console.log(hello);
