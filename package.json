@@ -16,13 +16,11 @@
     "lint": "eslint \"{lib}/**/*.js\" index.js",
     "lint:fix": "npm run lint -- --fix",
     "start:dev": "nodemon -r make-promises-safe -r dotenv/config index.js",
-    "start": "node -r make-promises-safe -r dotenv/config index.js"
+    "start": "node -r make-promises-safe -r dotenv/config index.js",
+    "prepare": "husky install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kameshsharma01/sementic-release-doc.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/kameshsharma01/sementic-release-doc.git",
+  "author": "kamesh-amdocs",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kameshsharma01/sementic-release-doc/issues"
@@ -34,9 +32,12 @@
     "depcheck": "^1.4.3",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
-    "husky": "^8.0.1",
+    "husky": "7",
     "nest": "^0.1.6",
     "pino-pretty": "^8.1.0",
     "prettier": "^2.7.1"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0"
   }
 }
