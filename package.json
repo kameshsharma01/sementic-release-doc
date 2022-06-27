@@ -1,42 +1,65 @@
 {
   "name": "sementic-release-doc",
   "version": "1.0.0",
-  "description": "",
+  "description": "A proxy server that handles Liquid templates",
   "main": "index.js",
+  "license": "UNLICENSED",
+  "author": "tts-amdocs",
+  "contributors": [
+    "0dysseas <odysseus.kaziolas@amdocs.com>",
+    "gfot <foteinog@amdocs.com>",
+    "urbanit <roussoss@amdocs.com>"
+  ],
   "directories": {
     "lib": "lib",
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier \"{lib}/**/*.js\"",
+    "format": "prettier \"{lib,test}/**/*.js\"",
     "format:check": "npm run format -- --check",
     "format:list": "npm run format -- --list-different",
     "format:write": "npm run format -- --write",
-    "lint": "eslint \"{lib}/**/*.js\" index.js",
+    "lint": "eslint \"{lib,test}/**/*.js\" index.js",
     "lint:fix": "npm run lint -- --fix",
     "start:dev": "nodemon -r make-promises-safe -r dotenv/config index.js",
-    "start": "node -r make-promises-safe -r dotenv/config index.js"
+    "start": "node -r make-promises-safe -r dotenv/config index.js",
+    "test": "jest",
+    "test:dependencies": "./test/support/depcheck.js",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kameshsharma01/sementic-release-doc.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kameshsharma01/sementic-release-doc/issues"
-  },
-  "homepage": "https://github.com/kameshsharma01/sementic-release-doc#readme",
+  "keywords": [],
   "dependencies": {
-    "@commitlint/cli": "^17.0.2",
-    "@commitlint/config-conventional": "^17.0.2",
-    "depcheck": "^1.4.3",
-    "eslint": "^8.18.0",
-    "eslint-config-prettier": "^8.5.0",
-    "husky": "^8.0.1",
-    "nest": "^0.1.6",
-    "pino-pretty": "^8.1.0",
-    "prettier": "^2.7.1"
+    "ajv": "^6.12.6",
+    "fastify": "^3.0.0",
+    "got": "^11.8.2",
+    "liquidjs": "^9.25.0",
+    "make-promises-safe": "^5.1.0",
+    "pino": "^6.11.3",
+    "ramda": "^0.27.1",
+    "require-directory": "^2.1.1",
+    "sugar-inflections": "^2.0.6",
+    "sugar-string": "^2.0.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "depcheck": "^1.4.1",
+    "dotenv": "^9.0.2",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "husky": "^4.3.8",
+    "jest": "^27.2.5",
+    "jest-watch-typeahead": "^0.6.3",
+    "lint-staged": "^11.0.0",
+    "nock": "^13.0.11",
+    "nodemon": "^2.0.7",
+    "pino-pretty": "^4.8.0",
+    "prettier": "^2.3.0",
+    "semantic-release": "^17.4.4",
+    "timekeeper": "^2.2.0"
   }
 }
