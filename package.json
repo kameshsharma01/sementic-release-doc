@@ -18,6 +18,14 @@
     "start": "node -r make-promises-safe -r dotenv/config index.js",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
+      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+      "post-applypatch": "echo \"[Husky] post-applypatch\"",
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
+  },
   "repository": "git+https://github.com/kameshsharma01/sementic-release-doc.git",
   "author": "kamesh-amdocs",
   "license": "ISC",
