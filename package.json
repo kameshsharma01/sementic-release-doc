@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/kameshsharma01/sementic-release-doc#readme",
   "dependencies": {
+    "@semantic-release/git": "^10.0.1",
     "ajv": "^6.12.6",
     "fastify": "^3.0.0",
     "got": "^11.8.2",
@@ -42,7 +43,6 @@
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
     "@semantic-release/changelog": "2",
-    "@semantic-release/git": "4",
     "depcheck": "^1.4.1",
     "dotenv": "^9.0.2",
     "eslint": "^7.26.0",
