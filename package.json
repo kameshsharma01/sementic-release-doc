@@ -40,7 +40,7 @@
     "sugar-string": "^2.0.6"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.1",
+    "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^12.1.1",
     "@semantic-release/changelog": "2",
     "depcheck": "^1.4.1",
