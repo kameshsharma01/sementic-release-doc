@@ -31,8 +31,8 @@ jobs:
         run: npm run lint
       # - name: Audit packages
       #   run: npm audit --audit-level=high
-      - name: Run tests
-        run: npm run test:coverage
+      # - name: Run tests
+      #  run: npm run test:coverage
       - name: Release
         if: github.ref == 'refs/heads/main'
         run: npx semantic-release
